@@ -6,7 +6,7 @@ const steps = [
   {
     icon: ClipboardCheck,
     title: "Eligibility",
-    desc: "Higher Secondary School Certificate (Inter/A-Levels) with minimum 45% marks and a valid LAT score."
+    desc: "Higher Secondary School Certificate (Inter/A-Levels) with minimum 45% marks and a LAT score of at least 50."
   },
   {
     icon: FileText,

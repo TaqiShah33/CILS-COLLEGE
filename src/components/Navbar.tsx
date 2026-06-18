@@ -1,12 +1,13 @@
 import { useState } from "react";
-import { Menu, X, Scale } from "lucide-react";
+import { Menu, X } from "lucide-react"; 
 import { motion, AnimatePresence } from "framer-motion";
+import logoImg from "@/assets/logo.jpeg"; // <-- Loaded your logo asset file here
 
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Programs", href: "#programs" },
-  { label: "Admissions", href: "#admissions" }, // New link added
+  { label: "Admissions", href: "#admissions" },
   { label: "Faculty", href: "#faculty" },
   { label: "Campus", href: "#campus" },
   { label: "Contact", href: "#contact" },
@@ -19,7 +20,12 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-sm shadow-lg">
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
         <a href="#home" className="flex items-center gap-3 group">
-          <Scale className="h-8 w-8 text-gold group-hover:rotate-12 transition-transform" />
+          {/* Logo rendered raw with its native white background block */}
+          <img 
+            src={logoImg} 
+            alt="Capital Institute of Legal Studies Logo" 
+            className="h-9 w-auto object-contain rounded-sm" 
+          />
           <div>
             <span className="font-display text-xl font-bold text-white tracking-wide">
               Capital Institute
@@ -42,7 +48,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#admissions" // Updated from #contact
+            href="#admissions"
             className="ml-2 px-5 py-2 bg-gold text-navy font-body font-semibold text-sm rounded uppercase tracking-wider hover:brightness-110 shadow-md transition-all active:scale-95"
           >
             Apply Now
@@ -79,7 +85,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="#admissions" // Updated from #contact
+                href="#admissions"
                 onClick={() => setOpen(false)}
                 className="px-8 py-3 bg-gold text-navy font-body font-semibold text-sm rounded uppercase tracking-wider shadow-lg"
               >

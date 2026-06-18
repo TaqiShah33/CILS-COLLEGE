@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroCampus from "@/assets/uni.jpeg";
+import heroCampus from "@/assets/uni 2.jpeg";
 
 const HeroSection = () => (
   <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">

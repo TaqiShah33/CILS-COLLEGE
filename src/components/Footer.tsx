@@ -1,4 +1,5 @@
-import { Scale } from "lucide-react";
+import logoImg from "@/assets/logo.jpeg"; // <-- 1. Import your custom logo file here
+// (Change to "logo.svg" or your exact filename if it's different)
 
 const Footer = () => (
   <footer className="bg-navy py-16">
@@ -6,8 +7,13 @@ const Footer = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <Scale className="h-7 w-7 text-gold" />
-            <span className="font-display text-lg font-bold text-primary-foreground">Lexington Law</span>
+            {/* 2. Replaced the Lucide Icon with an img tag */}
+            <img 
+              src={logoImg} 
+              alt="Capital Institute of Legal Studies Logo" 
+              className="h-8 w-auto object-contain" // Keeps aspect ratio perfectly intact
+            />
+            <span className="font-display text-lg font-bold text-primary-foreground">Capital Institute of Legal Studies</span>
           </div>
           <p className="font-body text-sm text-cream-dark leading-relaxed">
             Shaping legal minds since 1892. Committed to excellence, integrity, and justice.
@@ -15,7 +21,7 @@ const Footer = () => (
         </div>
         {[
           { title: "Academics", links: ["J.D. Program", "LL.M. Programs", "Clinics", "Research Centers"] },
-          { title: "Student Life", links: ["Moot Court", "Law Review", "Student Orgs", "Career Services"] },
+          { title: "Facilities", links: ["Modern Computer Lab", "E-Library", "Foreign Highly Qualified Staff", "Purpose Built Spacious Campus", "Part-Time English Language Classes","Air-Conditioned Classrooms"] },
           { title: "Quick Links", links: ["Admissions", "Financial Aid", "Alumni", "News & Events"] },
         ].map((col) => (
           <div key={col.title}>
@@ -32,7 +38,7 @@ const Footer = () => (
       </div>
       <div className="border-t border-navy-light pt-8 text-center">
         <p className="font-body text-xs text-cream-dark">
-          © 2026 Lexington School of Law. All rights reserved.
+          © 2026 Capital Institute of Legal Studies. All rights reserved.
         </p>
       </div>
     </div>

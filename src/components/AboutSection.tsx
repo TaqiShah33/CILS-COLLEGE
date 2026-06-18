@@ -4,10 +4,10 @@ import libraryImg from "@/assets/library.jpg";
 import { BookOpen, Award, Users, Globe, Gavel, Scale } from "lucide-react";
 
 const stats = [
-  { icon: Users, value: "Expert Faculty", label: "Legal Practitioners" },
-  { icon: Gavel, value: "Moot Court", label: "Practical Training" },
-  { icon: BookOpen, value: "Clinical Legal", label: "Real-world Experience" },
-  { icon: Globe, value: "Bar Exam Prep", label: "GAT Specialized" },
+  { icon: Users, value: "Foreign Qualified Staff", label: "Legal Practitioners" },
+  { icon: Gavel, value: "Digital Computer Lab", label: "Practical Training" },
+  { icon: BookOpen, value: "Purpose Built Spacious Campus", label: "Real-world Experience" },
+  { icon: Globe, value: "E-Library", label: "GAT Specialized" },
 ];
 
 const AboutSection = () => {

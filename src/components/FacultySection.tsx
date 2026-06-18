@@ -3,33 +3,39 @@ import { useRef } from "react";
 import { Quote } from "lucide-react";
 import bellaImg from "@/assets/BELLA.jpeg";
 
-// Mock data - Replace images with actual paths like "@/assets/director.jpg"
+// 1. IMPORT THE LEADERSHIP IMAGES EXPLICITLY HERE
+import asifImg from "@/assets/asif.jpeg"; 
+import naumanImg from "@/assets/noman.jpeg";
+import aynaImg from "@/assets/ayna.jpeg";
+import mohsanImg from "@/assets/mohsan.jpeg";
+import abidImg from "@/assets/abid.jpeg"; // Ensure this filename matches your asset folder perfectly
+
 const leadership = [
   {
     name: "RAI ASIF ZIA KHARRAL",
     role: "Director",
-    image: "https://via.placeholder.com/400x500", // Replace with real image
+    image: asifImg, 
     message: "Our mission is to redefine legal education in Sargodha by blending traditional ethics with modern advocacy skills."
   },
   {
     name: "KHAWAJA NAUMAN AHMED SETHI",
     role: "Principal",
-    image: "https://via.placeholder.com/400x500", // Replace with real image
+    image: naumanImg, 
     message: "We provide an environment where students don't just study law—they learn to practice it with integrity and precision."
   }
 ];
 
 const faculty = [
   { 
-    name: "MOHSAN RAZA SHAH", 
+    name: "SYED MOHSAN RAZA SHAH", 
     role: "PROFESSOR", 
-    image: "https://via.placeholder.com/150", 
+    image: mohsanImg, 
     message: "Focusing on the pillar of justice." 
   },
   { 
     name: "RAI ABID HUSSAIN BHATTI", 
     role: "PROFESSOR", 
-    image: "https://via.placeholder.com/150", 
+    image: abidImg, 
     message: "Advocating for global equality." 
   },
   { 
@@ -41,7 +47,7 @@ const faculty = [
   { 
     name: "AYNA HAIDER", 
     role: "HEAD OF ACADEMICS", 
-    image: "https://via.placeholder.com/150", 
+    image: aynaImg, 
     message: "The art of persuasive defense." 
   },
 ];
@@ -70,11 +76,11 @@ const FacultySection = () => {
               transition={{ duration: 0.8 }}
               className="flex flex-col lg:flex-row bg-navy-light/30 rounded-2xl overflow-hidden border border-white/10 group"
             >
-              <div className="lg:w-2/5 overflow-hidden">
+              <div className="lg:w-2/5 min-h-[250px] overflow-hidden flex items-center justify-center bg-navy-light/10">
                 <img 
                   src={leader.image} 
                   alt={leader.name} 
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full object-cover transition-all duration-500"
                 />
               </div>
               <div className="lg:w-3/5 p-8 flex flex-col justify-center">

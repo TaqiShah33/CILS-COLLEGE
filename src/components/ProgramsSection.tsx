@@ -19,10 +19,11 @@ const scholarshipQuotas = [
 ];
 
 const benefits = [
-  "Prestigious Career with Global Opportunities",
-  "Ability to Advocate for Social Justice & Human Rights",
+  "Professional Degree",
+  "Ideal for CSS/PMS Aspirants",
   "Strong Foundation for Civil Services & Judiciary",
-  "Develop Critical Thinking and Persuasive Communication",
+  "Join Pak Army as JAG (Judge Advocate General)",
+  "Be a Tax Consultant / Self-Employed",
 ];
 
 const ProgramsSection = () => {

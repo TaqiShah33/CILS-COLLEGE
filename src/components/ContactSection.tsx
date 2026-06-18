@@ -70,7 +70,7 @@ const ContactSection = () => {
             <div className="mt-10 p-6 bg-navy rounded-lg">
               <p className="font-display text-lg font-semibold text-gold mb-2">Application Deadline</p>
               <p className="font-body text-cream-dark text-sm">
-                Fall 2026 applications close on <strong className="text-primary-foreground">March 1, 2026</strong>.
+                Fall 2026 applications close on <strong className="text-primary-foreground">August 15, 2026</strong>.
                 Early decision applicants are encouraged to apply by November 15.
               </p>
             </div>
